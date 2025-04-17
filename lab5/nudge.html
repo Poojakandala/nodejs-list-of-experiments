@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .element {
+                width: 400px;
+                height: 400px;
+                background-color: red;
+                animation: pulse 3s ease infinite alternate, nudge 5s linear infinite alternate;
+                border-radius: 50%;
+                position: relative; /* Ensure the element can move */
+            }
+
+            @keyframes pulse {
+                0%, 100% {
+                    background-color: red;
+                }
+                50% {
+                    background-color: orange;
+                }
+            }
+
+            @keyframes nudge {
+                0%, 100% {
+                    transform: translateX(0);
+                }
+                50% {
+                    transform: translateX(150px);
+                }
+                80% {
+                    transform: translateX(-150px);
+                }
+            }
+
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="element"></div>
+    </body>
+</html>

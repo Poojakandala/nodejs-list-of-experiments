@@ -1,0 +1,18 @@
+center
+    {
+        color:orchid;
+        font-family: prestina;
+        font-size:50px;
+    }
+h1
+{
+    color:black
+}
+p
+{
+    color:brown
+}
+img{
+    border-radius: 2%;
+    border-style: double;
+}   
